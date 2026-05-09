@@ -27,7 +27,7 @@
     }
     
     h1 { font-size: 3.5rem; }
-    h2 { font-size: 1.75rem; margin-top: 2rem; margin-bottom: 1.5rem; }
+    h2 { font-size: 1.75rem; margin-top: 2rem; margin-bottom: 0.5rem; }
     
     .nav-link { 
       font-size: 0.95rem;
@@ -69,6 +69,14 @@
       text-transform: uppercase;
       letter-spacing: 0.1em;
       margin-right: 0.5rem;
+    }
+    
+    .section-subtitle {
+      font-size: 0.9rem;
+      color: #666;
+      font-style: italic;
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
     }
     
     .formula { 
@@ -162,6 +170,8 @@
       <!-- 1. PEMDAS -->
       <section id="pemdas">
         <h2><span class="section-number">01</span>Order of Operations (PEMDAS)</h2>
+        <p class="section-subtitle">Why it matters: PEMDAS ensures everyone solves math problems the same way and gets the same answer. Without a standard order, the same expression could yield different results. This is critical in engineering, programming, finance, and science where consistency is essential.</p>
+        <p class="section-subtitle">Real-world use: Spreadsheet formulas, financial calculations, computer algorithms, and any collaborative work where multiple people need to interpret the same mathematical expression identically.</p>
         <div class="content-card">
           <p class="formula mb-6">Parentheses → Exponents → Multiplication & Division (left to right) → Addition & Subtraction (left to right)</p>
           <div class="bg-gray-50 p-4 border-l-4 border-gray-300">
@@ -173,6 +183,8 @@
       <!-- 2. Negative Numbers -->
       <section id="negatives">
         <h2><span class="section-number">02</span>Negative Number Rules</h2>
+        <p class="section-subtitle">Why it matters: Negative numbers represent losses, debts, temperatures below zero, and positions below reference points. Understanding sign rules is essential for correctly representing and manipulating real-world quantities that can be both positive and negative.</p>
+        <p class="section-subtitle">Real-world use: Banking (credits and debits), accounting, weather forecasting, physics (direction of forces), and any situation involving gains and losses or above/below measurements.</p>
         <div class="grid grid-cols-2 gap-6">
           <div class="content-card">
             <h3 class="text-base mb-4">Sign Rules for Multiplication / Division</h3>
@@ -194,6 +206,8 @@
       <!-- 3. Properties -->
       <section id="properties">
         <h2><span class="section-number">03</span>Properties of Real Numbers</h2>
+        <p class="section-subtitle">Why it matters: These properties are the foundation of all algebra. They allow us to rearrange and simplify expressions, solve equations, and prove that different-looking expressions are actually equivalent. They're the "rules of the game" that make algebra work.</p>
+        <p class="section-subtitle">Real-world use: Software optimization (reordering operations for efficiency), circuit design (combining resistors), construction (combining materials or dimensions), and any field where you need to prove mathematical equivalence.</p>
         <div class="grid grid-cols-2 gap-6">
           <div class="content-card space-y-4">
             <div class="formula">Commutative: \( a + b = b + a \), \( a \times b = b \times a \)</div>
@@ -210,6 +224,8 @@
       <!-- 4. Exponents -->
       <section id="exponents">
         <h2><span class="section-number">04</span>Exponent Rules</h2>
+        <p class="section-subtitle">Why it matters: Exponents simplify notation and calculations for repeated multiplication. They also model exponential growth and decay in nature, making them essential for understanding population growth, radioactive decay, and compound interest.</p>
+        <p class="section-subtitle">Real-world use: Finance (compound interest calculations), biology (bacterial growth), physics (radioactive decay), computer science (data storage capacity), and any phenomenon involving exponential change.</p>
         <div class="content-card">
           <div class="grid grid-cols-2 gap-8">
             <div class="formula">\( a^m \cdot a^n = a^{m+n} \)</div>
@@ -225,6 +241,8 @@
       <!-- 5. Fractions -->
       <section id="fractions">
         <h2><span class="section-number">05</span>Fraction Rules</h2>
+        <p class="section-subtitle">Why it matters: Fractions represent parts of a whole and are more precise than decimals in many contexts. Understanding fraction operations is crucial for cooking, construction, medicine, and any work involving measurements or proportions.</p>
+        <p class="section-subtitle">Real-world use: Cooking recipes (scaling ingredients), construction (fractional measurements), medicine (dosage calculations), automotive repair (bolt sizes), and anywhere precision with partial quantities is needed.</p>
         <div class="content-card">
           <ul class="grid grid-cols-1 gap-4">
             <li class="formula">Multiply: \( \frac{a}{b} \times \frac{c}{d} = \frac{a \cdot c}{b \cdot d} \)</li>
@@ -237,6 +255,8 @@
       <!-- 6. Equations & Inequalities -->
       <section id="equations">
         <h2><span class="section-number">06</span>Solving Equations & Inequalities</h2>
+        <p class="section-subtitle">Why it matters: Equation solving is the core of algebra. It's how we find unknown values, solve real-world problems, and make predictions. Inequalities help us work with ranges and constraints, which is essential for optimization and decision-making.</p>
+        <p class="section-subtitle">Real-world use: Engineering design (finding component specifications), business (break-even analysis), budgeting (determining spending limits), physics (finding when an object reaches a certain height), and any problem requiring you to find unknown values or acceptable ranges.</p>
         <div class="content-card">
           <p class="formula mb-4">Do the same operation to both sides to keep the equation balanced.</p>
           <p class="formula mb-6"><strong>Inequality note:</strong> When multiplying or dividing by a negative number, flip the inequality sign.</p>
@@ -247,6 +267,8 @@
       <!-- 7. FOIL -->
       <section id="foil">
         <h2><span class="section-number">07</span>FOIL Method</h2>
+        <p class="section-subtitle">Why it matters: FOIL is a systematic way to multiply binomials, which is a foundational skill for factoring, solving quadratic equations, and simplifying complex expressions. It helps prevent missing terms and ensures accurate results.</p>
+        <p class="section-subtitle">Real-world use: Expanding polynomial expressions in physics calculations, determining areas and volumes in construction, and any field that uses quadratic models (economics, engineering, ballistics).</p>
         <div class="content-card">
           <p class="description">FOIL is a mnemonic acronym that helps you remember the steps for multiplying two binomials. It stands for <strong>First, Outer, Inner, Last</strong>, representing the four products you need to create when multiplying binomial expressions.</p>
           
@@ -281,6 +303,8 @@
       <!-- 8. Factoring -->
       <section id="factoring">
         <h2><span class="section-number">08</span>Advanced Factoring</h2>
+        <p class="section-subtitle">Why it matters: Factoring is the reverse of multiplication and is essential for solving equations, simplifying complex expressions, and finding roots. Different factoring patterns appear frequently in advanced mathematics and applied fields.</p>
+        <p class="section-subtitle">Real-world use: Signal processing (polynomial analysis), economics (supply and demand curves), structural engineering (stress calculations), and cryptography (factoring large numbers).</p>
         <div class="grid grid-cols-2 gap-6">
           <div class="content-card">
             <p class="formula"><strong>Difference of Squares:</strong></p>
@@ -304,6 +328,8 @@
       <!-- 9. Radicals -->
       <section id="radicals">
         <h2><span class="section-number">09</span>Radical Rules</h2>
+        <p class="section-subtitle">Why it matters: Radicals represent roots and fractional exponents, which appear in geometry, physics, and engineering. They're essential for solving problems involving areas, volumes, distances, and natural phenomena.</p>
+        <p class="section-subtitle">Real-world use: Architecture (calculating diagonal measurements), physics (motion equations, kinetic energy), statistics (standard deviation), computer graphics (distance calculations), and any problem requiring square roots or higher-order roots.</p>
         <div class="content-card">
           <div class="grid grid-cols-2 gap-8">
             <div class="formula">\( \sqrt[n]{ab} = \sqrt[n]{a} \cdot \sqrt[n]{b} \)</div>
@@ -317,6 +343,8 @@
       <!-- 10. Quadratic Formula -->
       <section id="quadratics">
         <h2><span class="section-number">10</span>Quadratic Formula</h2>
+        <p class="section-subtitle">Why it matters: The quadratic formula is one of the most powerful tools in algebra. It solves any quadratic equation, no matter how complicated, in a systematic way. It's the key to finding roots of polynomials and solving real-world problems modeled by quadratic functions.</p>
+        <p class="section-subtitle">Real-world use: Physics (projectile motion, falling objects), engineering (beam stress, circuit design), business (profit maximization), economics (market equilibrium), and any field that uses parabolic or quadratic models.</p>
         <div class="content-card text-center">
           <p class="formula mb-4">For \( ax^2 + bx + c = 0 \):</p>
           <p class="formula text-2xl">\( x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} \)</p>
@@ -326,6 +354,8 @@
       <!-- 11. Complex Numbers -->
       <section id="complex">
         <h2><span class="section-number">11</span>Complex Numbers</h2>
+        <p class="section-subtitle">Why it matters: Complex numbers extend the number system to solve problems that have no real solutions (like taking the square root of a negative number). They're essential in advanced mathematics and have surprising applications in the real world.</p>
+        <p class="section-subtitle">Real-world use: Electrical engineering (AC circuit analysis), quantum mechanics, signal processing, fluid dynamics, and any field involving waves, oscillations, or rotations in multi-dimensional spaces.</p>
         <div class="content-card">
           <p class="formula mb-4">\( i = \sqrt{-1} \), so \( i^2 = -1 \)</p>
           <p class="formula mb-4">Powers of \( i \) cycle every 4: \( i, -1, -i, 1 \)</p>
@@ -336,6 +366,8 @@
       <!-- 12. Logarithms -->
       <section id="logs">
         <h2><span class="section-number">12</span>Logarithm Properties</h2>
+        <p class="section-subtitle">Why it matters: Logarithms are the inverse of exponentials and turn multiplication into addition, making complex calculations manageable. They're essential for understanding phenomena involving exponential growth and decay, and for solving exponential equations.</p>
+        <p class="section-subtitle">Real-world use: Finance (calculating compound interest periods), geology (earthquake magnitude scale), chemistry (pH calculations), astronomy (star brightness), information technology (algorithm complexity), and any field studying exponential processes.</p>
         <div class="content-card">
           <div class="grid grid-cols-2 gap-8">
             <div class="formula">Product: \( \log_b (xy) = \log_b x + \log_b y \)</div>
@@ -349,6 +381,8 @@
       <!-- 13. Transformations -->
       <section id="transformations">
         <h2><span class="section-number">13</span>Function Transformations</h2>
+        <p class="section-subtitle">Why it matters: Transformations show how changes to function parameters affect the graph. Understanding transformations allows you to quickly sketch complex functions and understand how to adjust models to fit different scenarios.</p>
+        <p class="section-subtitle">Real-world use: Data visualization and analysis, signal processing, physics (wave behavior), economics (demand curve adjustments), game development (sprite positioning), and any field that works with graphical data or modeling.</p>
         <div class="content-card">
           <p class="formula mb-4">For any function \( f(x) \):</p>
           <ul class="grid grid-cols-2 gap-4">
@@ -364,6 +398,8 @@
       <!-- 14. Conic Sections -->
       <section id="conics">
         <h2><span class="section-number">14</span>Conic Sections</h2>
+        <p class="section-subtitle">Why it matters: Conic sections (circles, ellipses, parabolas, and hyperbolas) describe many natural and engineered phenomena. They appear in orbital mechanics, antenna design, architecture, and countless applications across science and engineering.</p>
+        <p class="section-subtitle">Real-world use: Astronomy (planetary orbits), satellite communications (antenna design), bridge construction (parabolic arches), optical design (reflective surfaces), navigation systems (LORAN), and any system involving curved paths or surfaces.</p>
         <div class="grid grid-cols-2 gap-6">
           <div class="content-card">
             <p class="formula"><strong>Circle:</strong></p>
