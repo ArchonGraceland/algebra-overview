@@ -77,6 +77,25 @@
       color: #2c3e50;
     }
     
+    .description { 
+      font-size: 0.95rem;
+      color: #444;
+      line-height: 1.8;
+      margin-bottom: 1rem;
+    }
+    
+    .foil-step {
+      background: #f5f5f5;
+      border-left: 3px solid #8b0000;
+      padding: 1rem;
+      margin: 0.75rem 0;
+      font-size: 0.95rem;
+    }
+    
+    .foil-step strong {
+      color: #8b0000;
+    }
+    
     header { 
       background: white;
       border-bottom: 2px solid #8b0000;
@@ -229,8 +248,33 @@
       <section id="foil">
         <h2><span class="section-number">07</span>FOIL Method</h2>
         <div class="content-card">
-          <p class="formula mb-4">Multiply two binomials: \( (a + b)(c + d) = ac + ad + bc + bd \)</p>
-          <p class="formula">Example: \( (x + 3)(x - 2) = x^2 + x - 6 \)</p>
+          <p class="description">FOIL is a mnemonic acronym that helps you remember the steps for multiplying two binomials. It stands for <strong>First, Outer, Inner, Last</strong>, representing the four products you need to create when multiplying binomial expressions.</p>
+          
+          <p class="formula mb-4">General formula: \( (a + b)(c + d) = ac + ad + bc + bd \)</p>
+          
+          <div class="foil-step">
+            <strong>F</strong> – First: Multiply the first terms of each binomial → \( a \cdot c \)
+          </div>
+          <div class="foil-step">
+            <strong>O</strong> – Outer: Multiply the outer terms → \( a \cdot d \)
+          </div>
+          <div class="foil-step">
+            <strong>I</strong> – Inner: Multiply the inner terms → \( b \cdot c \)
+          </div>
+          <div class="foil-step">
+            <strong>L</strong> – Last: Multiply the last terms of each binomial → \( b \cdot d \)
+          </div>
+          
+          <p class="formula mt-6 mb-3"><strong>Then add all four products:</strong> \( ac + ad + bc + bd \)</p>
+          
+          <div class="bg-gray-50 p-4 border-l-4 border-gray-300">
+            <p class="formula mb-3"><strong>Worked Example:</strong> \( (x + 3)(x - 2) \)</p>
+            <p class="formula mb-2">F: \( x \cdot x = x^2 \)</p>
+            <p class="formula mb-2">O: \( x \cdot (-2) = -2x \)</p>
+            <p class="formula mb-2">I: \( 3 \cdot x = 3x \)</p>
+            <p class="formula mb-2">L: \( 3 \cdot (-2) = -6 \)</p>
+            <p class="formula"><strong>Result:</strong> \( x^2 - 2x + 3x - 6 = x^2 + x - 6 \)</p>
+          </div>
         </div>
       </section>
 
