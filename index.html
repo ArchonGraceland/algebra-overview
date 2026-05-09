@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Algebra 1 & 2 • Complete Formulas & Rules Cheat Sheet</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600&display=swap');
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    h1, h2 { font-family: 'Space Grotesk', sans-serif; }
+    .math { font-size: 1.15em; }
+    .card { transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1); }
+    .card:hover { transform: translateY(-2px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1); }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-200">
+  <div class="max-w-screen-2xl mx-auto">
+    <!-- Header -->
+    <div class="bg-gradient-to-r from-indigo-600 via-blue-700 to-violet-700 px-8 py-12">
+      <div class="flex items-center justify-between">
+        <div>
+          <h1 class="text-5xl font-semibold tracking-tighter">Algebra Cheat Sheet</h1>
+          <p class="text-2xl text-indigo-200 mt-1">All formulas &amp; rules from our chats • Algebra 1 + Algebra 2</p>
+        </div>
+        <div class="text-right">
+          <span class="px-4 py-2 bg-white/20 text-white text-sm font-medium rounded-2xl backdrop-blur-md">Copy &amp; save as .html</span>
+          <p class="text-xs text-indigo-200 mt-3">Math rendered perfectly with MathJax</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex">
+      <!-- Sidebar Navigation -->
+      <div class="w-72 bg-slate-900 border-r border-slate-800 min-h-[calc(100vh-160px)] p-6 overflow-y-auto sticky top-0">
+        <h3 class="uppercase text-xs font-semibold tracking-widest text-slate-400 mb-4">CONTENTS</h3>
+        <nav class="space-y-1">
+          <a href="#pemdas" class="flex items-center gap-3 px-4 py-3 hover:bg-slate-800 rounded-2xl text-sm font-medium transition-colors">1. Order of Operations (PEMDAS)</a>
+          <a href="#negatives" class="flex items-center gap-3 px-4 py-3 hover:bg-slate-800 rounded-2xl text-sm font-medium transition-colors">2. Negative Numbers</a>
+          <a href="#properties" class="flex items-center gap-3 px-4 py-3 hover:bg-slate-800 rounded-2xl text-sm font-medium transition-colors">3. Properties of Real Numbers</a>
+          <a href="#exponents" class="flex items-center gap-3 px-4 py-3 hover:bg-slate-800 rounded-2xl text-sm font-medium transition-colors">4. Exponent Rules</a>
+          <a href="#fractions" class="flex items-center gap-3 px-4 py-3 hover:bg-slate-800 rounded-2xl text-sm font-medium transition-colors">5. Fraction Rules</a>
+          <a href="#equations" class="flex items-center gap-3 px-4 py-3 hover:bg-slate-800 rounded-2xl text-sm font-medium transition-colors">6. Solving Equations &amp; Inequalities</a>
+          <a href="#foil" class="flex items-center gap-3 px-4 py-3 hover:bg-slate-800 rounded-2xl text-sm font-medium transition-colors">7. FOIL Method</a>
+          <a href="#factoring" class="flex items-center gap-3 px-4 py-3 hover:bg-slate-800 rounded-2xl text-sm font-medium transition-colors">8. Advanced Factoring</a>
+          <a href="#radicals" class="flex items-center gap-3 px-4 py-3 hover:bg-slate-800 rounded-2xl text-sm font-medium transition-colors">9. Radical Rules</a>
+          <a href="#quadratics" class="flex items-center gap-3 px-4 py-3 hover:bg-slate-800 rounded-2xl text-sm font-medium transition-colors">10. Quadratic Formula</a>
+          <a href="#complex" class="flex items-center gap-3 px-4 py-3 hover:bg-slate-800 rounded-2xl text-sm font-medium transition-colors">11. Complex Numbers</a>
+          <a href="#logs" class="flex items-center gap-3 px-4 py-3 hover:bg-slate-800 rounded-2xl text-sm font-medium transition-colors">12. Logarithm Properties</a>
+          <a href="#transformations" class="flex items-center gap-3 px-4 py-3 hover:bg-slate-800 rounded-2xl text-sm font-medium transition-colors">13. Function Transformations</a>
+          <a href="#conics" class="flex items-center gap-3 px-4 py-3 hover:bg-slate-800 rounded-2xl text-sm font-medium transition-colors">14. Conic Sections</a>
+        </nav>
+      </div>
+
+      <!-- Main Content -->
+      <div class="flex-1 p-8 space-y-16">
+
+        <!-- 1. PEMDAS -->
+        <section id="pemdas">
+          <h2 class="text-3xl font-semibold mb-6 flex items-center gap-3"><span class="text-indigo-400 text-xl">01</span>Order of Operations (PEMDAS)</h2>
+          <div class="card bg-slate-800 rounded-3xl p-8">
+            <p class="text-lg mb-6">Parentheses → Exponents → Multiplication &amp; Division (left to right) → Addition &amp; Subtraction (left to right)</p>
+            <div class="bg-slate-900 p-6 rounded-2xl">
+              <p class="text-xl">Example: \( 2 + 3 \times (4 - 1)^2 = 29 \)</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 2. Negative Numbers -->
+        <section id="negatives">
+          <h2 class="text-3xl font-semibold mb-6 flex items-center gap-3"><span class="text-indigo-400 text-xl">02</span>Negative Number Rules</h2>
+          <div class="grid grid-cols-2 gap-6">
+            <div class="card bg-slate-800 rounded-3xl p-8">
+              <p class="font-medium mb-4">Sign Rules for Multiplication / Division</p>
+              <ul class="space-y-3 text-lg">
+                <li>Same signs → Positive</li>
+                <li>Different signs → Negative</li>
+                <li>\( (-4) \times (-6) = 24 \)</li>
+                <li>\( 12 \div (-3) = -4 \)</li>
+              </ul>
+            </div>
+            <div class="card bg-slate-800 rounded-3xl p-8">
+              <p class="font-medium mb-4">Addition / Subtraction</p>
+              <p class="text-xl mb-3">\( a + (-b) = a - b \)</p>
+              <p class="text-xl">\( a - (-b) = a + b \)</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 3. Properties -->
+        <section id="properties">
+          <h2 class="text-3xl font-semibold mb-6 flex items-center gap-3"><span class="text-indigo-400 text-xl">03</span>Properties of Real Numbers</h2>
+          <div class="grid grid-cols-2 gap-6">
+            <div class="card bg-slate-800 rounded-3xl p-8 space-y-6">
+              <div>Commutative: \( a + b = b + a \), \( a \times b = b \times a \)</div>
+              <div>Associative: \( (a + b) + c = a + (b + c) \)</div>
+              <div>Distributive: \( a(b + c) = ab + ac \)</div>
+            </div>
+            <div class="card bg-slate-800 rounded-3xl p-8 space-y-6">
+              <div>Identity: \( a + 0 = a \), \( a \times 1 = a \)</div>
+              <div>Inverse: \( a + (-a) = 0 \), \( a \times \frac{1}{a} = 1 \) (a ≠ 0)</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 4. Exponents -->
+        <section id="exponents">
+          <h2 class="text-3xl font-semibold mb-6 flex items-center gap-3"><span class="text-indigo-400 text-xl">04</span>Exponent Rules</h2>
+          <div class="card bg-slate-800 rounded-3xl p-8 grid grid-cols-2 gap-x-12 gap-y-8 text-lg">
+            <div>\( a^m \cdot a^n = a^{m+n} \)</div>
+            <div>\( \frac{a^m}{a^n} = a^{m-n} \) (a ≠ 0)</div>
+            <div>\( (a^m)^n = a^{m \cdot n} \)</div>
+            <div>\( a^0 = 1 \) (a ≠ 0)</div>
+            <div>\( a^{-n} = \frac{1}{a^n} \) (a ≠ 0)</div>
+            <div>\( (ab)^n = a^n \cdot b^n \)</div>
+          </div>
+        </section>
+
+        <!-- 5. Fractions -->
+        <section id="fractions">
+          <h2 class="text-3xl font-semibold mb-6 flex items-center gap-3"><span class="text-indigo-400 text-xl">05</span>Fraction Rules</h2>
+          <div class="card bg-slate-800 rounded-3xl p-8">
+            <ul class="grid grid-cols-2 gap-6">
+              <li class="text-lg">Multiply: \( \frac{a}{b} \times \frac{c}{d} = \frac{a \cdot c}{b \cdot d} \)</li>
+              <li class="text-lg">Divide: \( \frac{a}{b} \div \frac{c}{d} = \frac{a \cdot d}{b \cdot c} \)</li>
+              <li class="text-lg">Add/Subtract: Common denominator → \( \frac{a}{b} + \frac{c}{d} = \frac{ad + bc}{bd} \)</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 6. Equations & Inequalities -->
+        <section id="equations">
+          <h2 class="text-3xl font-semibold mb-6 flex items-center gap-3"><span class="text-indigo-400 text-xl">06</span>Solving Equations &amp; Inequalities</h2>
+          <div class="card bg-slate-800 rounded-3xl p-8">
+            <p class="mb-4">Do the same operation to both sides to keep the equation balanced.</p>
+            <p class="text-lg mb-6"><strong>Inequality note:</strong> When multiplying or dividing by a negative number, flip the inequality sign.</p>
+            <p class="text-xl">Example: \( -2x > 8 \) → divide by -2 → \( x < -4 \)</p>
+          </div>
+        </section>
+
+        <!-- 7. FOIL -->
+        <section id="foil">
+          <h2 class="text-3xl font-semibold mb-6 flex items-center gap-3"><span class="text-indigo-400 text-xl">07</span>FOIL Method</h2>
+          <div class="card bg-slate-800 rounded-3xl p-8">
+            <p class="text-xl mb-4">Multiply two binomials: \( (a + b)(c + d) = ac + ad + bc + bd \)</p>
+            <p class="text-xl">Example: \( (x + 3)(x - 2) = x^2 + x - 6 \)</p>
+          </div>
+        </section>
+
+        <!-- 8. Factoring -->
+        <section id="factoring">
+          <h2 class="text-3xl font-semibold mb-6 flex items-center gap-3"><span class="text-indigo-400 text-xl">08</span>Advanced Factoring</h2>
+          <div class="grid grid-cols-2 gap-6">
+            <div class="card bg-slate-800 rounded-3xl p-8"><strong>Difference of Squares:</strong> \( a^2 - b^2 = (a - b)(a + b) \)</div>
+            <div class="card bg-slate-800 rounded-3xl p-8"><strong>Sum of Cubes:</strong> \( a^3 + b^3 = (a + b)(a^2 - ab + b^2) \)</div>
+            <div class="card bg-slate-800 rounded-3xl p-8"><strong>Difference of Cubes:</strong> \( a^3 - b^3 = (a - b)(a^2 + ab + b^2) \)</div>
+            <div class="card bg-slate-800 rounded-3xl p-8"><strong>Perfect Square Trinomial:</strong> \( a^2 \pm 2ab + b^2 = (a \pm b)^2 \)</div>
+          </div>
+        </section>
+
+        <!-- 9. Radicals -->
+        <section id="radicals">
+          <h2 class="text-3xl font-semibold mb-6 flex items-center gap-3"><span class="text-indigo-400 text-xl">09</span>Radical Rules</h2>
+          <div class="card bg-slate-800 rounded-3xl p-8 grid grid-cols-2 gap-8">
+            <div>\( \sqrt[n]{ab} = \sqrt[n]{a} \cdot \sqrt[n]{b} \)</div>
+            <div>\( \sqrt[n]{\frac{a}{b}} = \frac{\sqrt[n]{a}}{\sqrt[n]{b}} \) (b ≠ 0)</div>
+            <div>\( \sqrt[n]{a^m} = a^{m/n} \)</div>
+            <div>Rationalize denominator when needed</div>
+          </div>
+        </section>
+
+        <!-- 10. Quadratic Formula -->
+        <section id="quadratics">
+          <h2 class="text-3xl font-semibold mb-6 flex items-center gap-3"><span class="text-indigo-400 text-xl">10</span>Quadratic Formula</h2>
+          <div class="card bg-slate-800 rounded-3xl p-8 text-center">
+            <p class="text-2xl mb-4">For \( ax^2 + bx + c = 0 \):</p>
+            <p class="text-4xl font-light text-white">\( x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} \)</p>
+          </div>
+        </section>
+
+        <!-- 11. Complex Numbers -->
+        <section id="complex">
+          <h2 class="text-3xl font-semibold mb-6 flex items-center gap-3"><span class="text-indigo-400 text-xl">11</span>Complex Numbers</h2>
+          <div class="card bg-slate-800 rounded-3xl p-8">
+            <p class="mb-6">\( i = \sqrt{-1} \), so \( i^2 = -1 \)</p>
+            <p class="text-lg">Powers of \( i \) cycle every 4: \( i, -1, -i, 1 \)</p>
+            <p class="text-lg mt-4">Multiply using FOIL and replace \( i^2 \) with -1.</p>
+          </div>
+        </section>
+
+        <!-- 12. Logarithms -->
+        <section id="logs">
+          <h2 class="text-3xl font-semibold mb-6 flex items-center gap-3"><span class="text-indigo-400 text-xl">12</span>Logarithm Properties</h2>
+          <div class="card bg-slate-800 rounded-3xl p-8 grid grid-cols-1 md:grid-cols-2 gap-6 text-lg">
+            <div>Product: \( \log_b (xy) = \log_b x + \log_b y \)</div>
+            <div>Quotient: \( \log_b \left( \frac{x}{y} \right) = \log_b x - \log_b y \)</div>
+            <div>Power: \( \log_b (x^k) = k \log_b x \)</div>
+            <div>Inverse: \( b^{\log_b x} = x \)</div>
+          </div>
+        </section>
+
+        <!-- 13. Transformations -->
+        <section id="transformations">
+          <h2 class="text-3xl font-semibold mb-6 flex items-center gap-3"><span class="text-indigo-400 text-xl">13</span>Function Transformations</h2>
+          <div class="card bg-slate-800 rounded-3xl p-8">
+            <p class="text-xl mb-6">For any function \( f(x) \):</p>
+            <ul class="grid grid-cols-2 gap-4 text-lg">
+              <li>Up/down: \( f(x) \pm k \)</li>
+              <li>Left/right: \( f(x \pm h) \)</li>
+              <li>Reflection x-axis: \( -f(x) \)</li>
+              <li>Reflection y-axis: \( f(-x) \)</li>
+              <li>Vertical stretch: \( a \cdot f(x) \) (|a| &gt; 1 = stretch)</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 14. Conic Sections -->
+        <section id="conics">
+          <h2 class="text-3xl font-semibold mb-6 flex items-center gap-3"><span class="text-indigo-400 text-xl">14</span>Conic Sections (Basic Forms)</h2>
+          <div class="grid grid-cols-2 gap-6">
+            <div class="card bg-slate-800 rounded-3xl p-8"><strong>Circle:</strong> \( (x - h)^2 + (y - k)^2 = r^2 \)</div>
+            <div class="card bg-slate-800 rounded-3xl p-8"><strong>Parabola:</strong> \( y = a(x - h)^2 + k \)</div>
+            <div class="card bg-slate-800 rounded-3xl p-8"><strong>Ellipse:</strong> \( \dfrac{(x-h)^2}{a^2} + \dfrac{(y-k)^2}{b^2} = 1 \)</div>
+            <div class="card bg-slate-800 rounded-3xl p-8"><strong>Hyperbola:</strong> \( \dfrac{(x-h)^2}{a^2} - \dfrac{(y-k)^2}{b^2} = 1 \)</div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Tailwind initialization
+    tailwind.config = {
+      content: [],
+      theme: { extend: {} }
+    }
+    // MathJax auto-renders everything in \( \) and \[ \]
+  </script>
+</body>
+</html>
